@@ -1,0 +1,296 @@
+body{
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background:   #aa80ff;
+    color: #000;
+    overflow-x:hidden;
+}
+
+ul{
+    list-style: none; 
+}
+ a{
+    text-decoration: none !important;
+    color:#fff !important;
+    transition: all 0.5s ease-in-out;
+}
+a:hover{
+    color:	   #aa80ff!important;
+}
+.header{
+    background-color: #000;
+}
+.navbar{
+position: relative;
+
+}
+
+.navbar ul li{
+    position: relative;
+    margin-left: 2.5rem;
+    margin-right: .1rem;
+}
+.navbar ul li a{
+        position: relative;
+        display:block;
+        font-family: "Poppins", sans-serif;
+        font-size:13px;
+        font-weight:550;
+        line-height:14px;
+        letter-spacing:1.2px;
+        text-transform: uppercase;
+        color:#fff;
+}
+.navbar-toggler{
+    background:   #aa80ff;
+
+}
+.navbar-toggler:focus{
+    color:#fff;
+    box-shadow: 0 0 0 2px;
+}
+.navbar-collapse{
+    text-align: center;
+}
+img {
+    border-radius: 50%;
+    max-width: 90%;
+  }
+
+  .banner-section{
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .banner-section .banner-title{
+    position: relative;
+    margin: 0;
+    padding-top: 3rem;
+    font-weight:650;
+    font-family: "Poppins",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width:100%;
+    color: #fff;
+  }
+
+  .banner-section .banner-title::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #000;
+    overflow:hidden;
+    white-space:nowrap;
+  
+    animation: animate 4s linear infinite;
+    filter: drop-shadow(0 0 30px #fff) drop-shadow(0 0 50px #fff);
+  }
+ 
+  @keyframes animate
+  {
+
+    0%, 10%, 100%
+    {
+        width: 0;
+    }
+    70%, 90%
+    {
+        width:100%;
+    }
+  }
+
+
+  .cv_git{
+    position: relative;
+    margin: 0 0 20px 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  .cv_git li{
+    float: left;
+    margin-left: 20px;
+    margin-right: -35px;
+  }
+  .banner-section .cv {
+    letter-spacing: 2px;
+    background-color: #000;
+    color:  #fff ;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: solid 1px #fff;
+    cursor: pointer;
+    box-shadow: 0 3px 13px;
+  }
+  .banner-section .git {
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: solid 1px #fff;
+    cursor: pointer;
+    box-shadow: 0 3px 13px;
+  }
+  .banner-section .code {
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: solid 1px #fff;
+    cursor: pointer;
+    box-shadow: 0 3px 13px;
+  }
+  .banner-section .cv:hover{
+    background-color: #fff;
+    color: #000 !important;
+  }
+  .banner-section .git:hover{
+    background-color: #fff;
+    color: #000 !important;
+  }
+  .banner-section .code:hover{
+    background-color: #fff;
+    color: #000 !important;
+  }
+
+
+  /* footer */
+  .footer{
+    position: relative;
+    padding-top:50px ;
+    background: #000;
+  }
+
+  .footer .social-media .footer-list{
+    position: relative;
+    margin: 0 0 20px 0;
+    display: inline-block;
+  }
+  .footer .social-media .footer-list li{
+    float: left;
+    margin-right: 20px;
+  }
+
+  .footer .social-media .footer-list li a{
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+  }
+
+
+  /* =========================================================*/
+  .edu_body{
+    padding-top: 50px;
+    margin-left: 70px;
+    padding-left: 120px;
+    padding-bottom: 90px;
+  }
+  .edu_body .year{
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .edu_body h2{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .edu_body .institution{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .edu_body p{
+    color: #555 !important;
+  }
+  .edu_body img{
+        border-radius: 0%;
+        max-width: 70%;
+  }
+  /* ==================================================*/
+  .project_body{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 2px auto;
+  }
+  #pp{
+    padding-bottom: 100px;
+    border: solid 1px #aa80ff;
+    box-shadow: 8px 11px 11px 3px #fff;
+    justify-content: space-between ;
+    color: #000;
+  }
+  .project_body #pp .years{
+    font-size: 22px;
+    font-weight: 800;
+    color: #fff;
+  }
+  #pp:hover{
+    background: #fff;
+    border: solid 1px #aa80ff;
+    box-shadow: 8px 11px 11px 3px #6a36d2;
+    justify-content: space-between ;
+    color: #aa80ff;
+  }
+  .project_body #pp:hover .years{
+    color: #aa80ff !important;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .project_body h2{
+    font-size: 29px;
+    font-weight: 900;
+  }
+  .project_body a{
+    text-decoration: none !important;
+    color:#000 !important;
+    transition: all 0.2s ease-in-out;
+}
+a:hover{
+    color:	   #aa80ff!important;
+}
+
+/*====================================*/
+.container1{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#card{
+    flex:1 1 21rem ;
+    display: flex;
+    margin: 10px 20px;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    box-shadow:0 0 15px #fff;
+    padding: 10PX 20PX;
+    align-self: normal;
+}
+#card img{
+    border-radius: 0%;
+    max-width: 400px;
+    margin-bottom: auto;
+    border-radius: 40%;
+}
+#card h4{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+#card:hover{
+    box-shadow: 8px 11px 11px 3px #fff;
+}
